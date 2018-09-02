@@ -5,9 +5,9 @@ weight: 10
 ---
 
 [modprox](https://github.com/modprox) is a Go Module Proxy,
-targeted at the "inside the VPN" use case.
+targeted at the internally hosted use case.
 
 {{% block note %}}
-this is a nice quote
+modprox is currently under developemnt, expect bugs!
 {{% /block %}}
 

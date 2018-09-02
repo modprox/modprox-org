@@ -1,7 +1,7 @@
 modprox-org
 ===========
 
-This repository is the home for the source files which are used to generate the content for modprox.org.
+This repository is the home for the source files which are used to generate the content for [modprox.org](https://modprox.org)
 
 ## Requirements
 
