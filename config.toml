@@ -1,0 +1,20 @@
+baseURL = "https://modprox.org"
+languageCode = "en-us"
+title = "modprox docs"
+theme = "kraiklyn"
+
+pygmentsCodeFences = true
+pygmentsStyle = "monokailight"
+
+[params]
+sidebarColor = "gray"
+
+[[menu.shortcuts]]
+name = "modprox source on github"
+url = "https://github.com/modprox"
+weight = 10
+
+[[menu.shortcuts]]
+name = "indeed engineering on github"
+url = "https://github.com/indeedeng"
+weight = 20
