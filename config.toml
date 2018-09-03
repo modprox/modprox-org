@@ -1,4 +1,4 @@
-baseURL = "https://modprox.org"
+baseURL = "https://modprox.org/"
 languageCode = "en-us"
 title = "modprox docs"
 theme = "kraiklyn"
