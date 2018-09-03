@@ -6,8 +6,11 @@ theme = "kraiklyn"
 pygmentsCodeFences = true
 pygmentsStyle = "monokailight"
 
+
+
 [params]
 sidebarColor = "gray"
+customCss = ["css/custom.css"]
 
 [[menu.shortcuts]]
 name = "modprox source on github"

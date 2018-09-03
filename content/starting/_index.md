@@ -4,7 +4,7 @@ anchor: "starting"
 weight: 20
 ---
 
-This section is about how to download, get modprox up and running
-but in short form. More configuration options are described in the
-Configuration section.
+This is a quick whirlwind tour of setting up instances of the registry and the proxy.
+More advanced configuration and setup options are described in the [configuration](#configuration)
+section.
 

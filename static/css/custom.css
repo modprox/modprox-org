@@ -1,0 +1,5 @@
+
+/* hide the "generated on" thing in sidebar */
+.version {
+	visibility: hidden;
+}
