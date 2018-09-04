@@ -18,6 +18,6 @@ url = "https://github.com/modprox"
 weight = 10
 
 [[menu.shortcuts]]
-name = "indeed engineering on github"
-url = "https://github.com/indeedeng"
+name = "indeed engineering blog"
+url = "https://engineering.indeedblog.com/blog/"
 weight = 20
