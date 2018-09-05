@@ -97,3 +97,65 @@ a final request URI for a module. The current available transform types are able
 - define domains which require redirects, `go-get` meta-tag style
 - define HTTP request headers for specific domains
 - define arbitrary HTTP URL Path manipulations
+
+##### `transforms.domain_go-get.[].{domain}`
+
+The domain name, which if matched, will trigger a redirection lookup in the style supported
+by the `go-get` command. The protocol is describe in detail in the Go Command Documentation
+for [remote import paths](https://golang.org/cmd/go/#hdr-Remote_import_paths).
+
+Example
+
+```javascript
+"domain_go-get":[{
+  "domain": "gopkg.in"
+}]
+```
+
+##### `transforms.domain_redirect.[].{original, substitution}`
+
+The `domain_redirect` transform is used to create a static domain redirection
+from the `original` domain to the `substitution` domain. This is particularly useful
+for organizations with internally hosted repositories and import paths which do not
+match the network reachable domain of those repositories. For example if your code
+is hosted at `code.internal.company.net` but your import paths are all "company.com/",
+a static `domain_redirect` can be used to redirect requests for those internal import
+paths to the correct network domain.
+
+Example
+
+```javascript
+"domain_redirects": [{
+  "original": "company.com",
+  "substitution": "code.internal.company.net"
+}]
+```
+
+##### `transforms.domain_headers.[].{domain, header_key, header_value}`
+
+The `domain_headers` transform provides the ability to set domain-specific headers
+on HTTP requests for a source repository. This is commonly used for making requests
+to source repositories with authentication required.
+
+Example
+
+```javascript
+"domain_headers": [{
+    "domain": "code.internal.company.net",
+    "header_key": "Private-Token",
+    "header_value": "my_sekrit_token"
+}]
+```
+
+##### `transforms.domain_paths.[].{domain, path}`
+
+The `domain_paths` transform enables URL Path manipulation based on domain.
+
+Example
+
+```javascript
+"domain_paths": [{
+  "domain": "code.internal.company.net",
+  "path": "ELEM1/ELEM2/-/archive/VERSION/ELEM2-VERSION.zip"
+}]
+```
