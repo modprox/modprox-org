@@ -4,4 +4,6 @@ anchor: "registry-configuration"
 weight: 50
 ---
 
-This is how the registry component is configured.
+There is a [sample config](https://github.com/modprox/modprox-registry/blob/master/hack/configs/local.json)
+which demonstrates what the JSON configuration for the registry should generally look like.
+
