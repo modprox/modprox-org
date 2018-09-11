@@ -8,15 +8,13 @@ weight: 10
 
 modprox is broken up into a handful of git repositories
 
- - [modprox-registry](https://github.com/modprox/modprox-registry) houses the registry component
- - [modprox-proxy](https://github.com/modprox/modprox-proxy) houses the proxy component
+ - [mp](https://github.com/modprox/mp) houses the registry and proxy
  - [modprox-org](https://github.com/modprox/modprox-org) contains static content for this very docs site
- - [libmodprox](https://github.com/modprox/libmodprox) contains common code shared between components
  - [taggit](https://github.com/modprox/taggit) contains a convenient tool for creating semver git tags
 
 #### Tooling
 
-For hacking on modprox-registry or modprox-proxy, a few external tools are required.
+For hacking on the registry and proxy, a few external tools are required.
 
 - [go1.11](https://golang.org/dl/)+ is required, since modprox itself uses Go modules
 for managing third party dependencies. Make sure `GO111MODULE=on` is exported in the
@@ -32,3 +30,4 @@ with changes while doing development work.
 - [docker-compose](https://docs.docker.com/compose/) is used in conjunction with docker for
 managing a set of containers in unision, for super easy testing cycles.
 
+- [petrify](https://github.com/shoenig/petrify/) is used to convert static files into Go source code that can be compiled into your executable.
