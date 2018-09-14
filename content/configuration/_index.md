@@ -5,8 +5,8 @@ weight: 30
 ---
 
 Both the registry and the proxy components are configured through structs
-([registry](https://github.com/modprox/modprox-registry/blob/master/registry/config/config.go),
-[proxy](https://github.com/modprox/modprox-proxy/blob/master/proxy/config/config.go))
+([registry](https://github.com/modprox/mp/blob/master/registry/config/config.go),
+[proxy](https://github.com/modprox/mp/blob/master/proxy/config/config.go))
 which define what options can be set. Typically users of the pre-packaged binaries / `main` packages
 will configure the registry and the proxy through JSON files, however it is also possible to use
 the registry and proxy as libraries from some other `main` package. In that case, a pre-filled
